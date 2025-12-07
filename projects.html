@@ -15,6 +15,294 @@
 	</nav>
 
     <h1>Personal Projects</h1>
-    <p>Sorry, this page is still under construction! Why don't you check back in a bit?</p>
+
+    <section>
+      <h2>Current</h2>
+      <p>
+        These are projects that are currently at the top of my bucket list, and that will probably
+        receive updates in the near future.
+      </p>
+      <section>
+        <h3><a href="https://github.com/theyee0/Ooxil">Chess Engine</a></h3>
+        <p>
+          I wrote a chess engine in C a few years back, utilizing alpha-beta search and combined
+          with a basic evaluation function on a mailbox-style chess board. While currently the
+          chess engine works, it's not very fast, so I want to make some enhancements.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>
+              Add additional heuristics to search algorithm
+              <ul>
+                <li>Killer Heuristic</li>
+                <li>History Heuristic</li>
+                <li>Static Exchange Evaluation</li>
+              </ul>
+            </li>
+            <li>Implement zobrist hashing and transposition tables</li>
+            <li>Convert mailbox approach to use bitboards or 0x88</li>
+            <li>Refactor oversized functions</li>
+            <li>Convert codebase to use ANSI/ISO90 C</li>
+            <li>Change management of global state to be less clunky</li>
+            <li>Enhance evaluation function (and investigate using NNUE)</li>
+            <li>Implement UCI Parser</li>
+            <li>
+              Implement non-core rules
+              <ul>
+                <li>50 move rule</li>
+                <li>Stalemate by repetition</li>
+                <li>75 move rule</li>
+                <li>En passant</li>
+                <li>Non-Queen promotion</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Move generation algorithm complete</li>
+            <li>Evaluation function complete</li>
+            <li>Core alpha-beta search complete</li>
+            <li>Basic UCI interactivity complete</li>
+          </ul>
+        </section>
+      </section>
+
+
+      <section>
+        <h3><a href="https://github.com/theyee0/markovs-dumb-chatbot">Text Predictor</a></h3>
+        <p>
+          This is a program that loads a user's chat history into a dynamic list and
+          autoregressively generates new text based on the history. Currently for simplicity a
+          naive Markov Chain is implemented.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Implement HMM and parts of speech tagging</li>
+            <li>Enable context splitting</li>
+            <li>Implement secondary markov chains for analyzing context</li>
+            <li>Explore use of small RNNs</li>
+            <li>Implement proper <code>&lt;|endoftext|&gt;</code>s tagging</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Prefix-Sum based optimization for memory efficiency implemented</li>
+            <li>Text prediction framework complete</li>
+            <li>Rudimentary user interface complete</li>
+          </UL>
+        </section>
+      </section>
+      <section>
+        <h3><a href="https://github.com/theyee0/Stork">Storywriting Engine</a></h3>
+        <p>
+          A program that aims to be a procedurally generated analogue of text-based games like
+          Zork, taking inspiration from games like Dwarf Fortress. The ultimate goal is to be able
+          to subjectively coherent, if not necessarily interesting, stories and automatically
+          generated puzzles.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Event Queue/Timeline</li>
+            <li>Centralize cause/effect tables</li>
+            <li>Debug move map generation and implement unit tests/visualizations</li>
+            <li>Write descriptions, characteristics, and actions for 5 core character types</li>
+            <li>Enhance command parser with more options</li>
+            <li>Improve user interface and add command-line interface</li>
+            <li>Add ability to save game state</li>
+            <li>Tune randomization parameters</li>
+            <li>Implement combat/exploration mechanics</li>
+            <li>Investigate implementation of storytelling strategies</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Basic Parser + part of text identifier complete</li>
+            <li>Basic tile-based room generation complete</li>
+            <li>Placeholder random events written</li>
+          </ul>
+      </section>
+    </section>
+
+    <section>
+      <h2>Upcoming</h2>
+      <p>
+        These are projects for which I have not yet started development, but that are extremely
+        interesting to me. For the most part, these are also projects that I don't yet feel I have
+        the skill to properly complete, so they're sitting on the backburner for the forseeable
+        future.
+      </p>
+      <section>
+        <h3>Z80 Computer</h3>
+        <p>
+          A computer using multiple Zilog Z80 cores in a laptop form factor capable of running CP/M
+          and emulating popular systems from the 80s time period
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Manufacture wooden/aluminum shell</li>
+            <li>Port CP/M and implement basic support for SMT</li>
+            <li>Port Fuzix</li>
+            <li>Incorporate 8 zilog z80/ez80 microprocessors</li>
+            <li>Implement paging for 16MB of shared memory (sram/dram, not sure)</li>
+            <li>Add support for USB/Serial interfaces at low speeds</li>
+            <li>Add support for eDP display at low refresh rate using only time-period parts</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Researching eDP protocol specifications in progress</li>
+            <li>Researching similar projects and limitations in progress</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Inspiration</h4>
+          <p>
+            My original inspiration for this project came from my interest in Texas Instruments
+            graphing calculators. While I loved the form factor, I felt that it was slightly
+            limiting due to the OS and the lack of customizability with regards to hardware.
+          </p>
+          <p>
+            Around the same time, I got interested in 80s computing, specifically AT&amp;T boxes,
+            the IBM 5150, and the TRS-80. Looking into their design, while it was certainly much
+            more complex than anything I have every attempted, it still seemed feasible with a lot
+            of learning and experimentation.
+          </p>
+          <p>
+            More recently, I've started seeing fan projects like
+            <a href="http://www.chrisfenton.com/the-zedripper-part-1/">the Zedripper</a> and
+            Ben Eater's 65c02 computer that have explored super cool ideas with 80s microprocessors
+            and made me want to build my own incarnation. While I don't think I currently have all
+            the requisite knowledge to design the PCB, I've started playing around with KiCAD and
+            sort of learning electrical engineering casually to build towards this project.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3>Grammar Analyzer</h3>
+        <p>
+          A program like Grammarly with a greater understanding of grammatical structure and the
+          ability to heuristically resolve problematic sentences given limited contextual
+          information, approximate string matching, and a database of the most common patterns.
+          A primary goal is to avoid using neural networks and generally to optimize performance
+          for a low-end computer on a single thread.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Ability to correctly tag the word classes in a correctly-formed sentence</li>
+            <li>Resolve mis-spelled words based on morphological similarity and context</li>
+            <li>Reorder malformed sentences based on word classes and structure</li>
+            <li>Easily user-modifiable list of grammatical "style" patterns</li>
+            <li>Ability to "learn" new words through Bayesian Inference</li>
+            <li>Ability to probabilistically identify patterns through Bayesian Inference</li>
+            <li>Ability to infer function of unknown words based on context and position</li>
+            <li>Emacs, Vim, Neovim, and Libreoffice plugins</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Began study of rhetorical grammar</li>
+            <li>Identified "seed" databases (Wordnet et al., GCIDE) for analysis</li>
+            <li>Investigating resources for Computational Semantics and Linguistics</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Inspiration</h4>
+          <p>
+            Since learning to program, I was curious about how the spell checker and writing style
+            editor worked in Grammarly and Google Docs. It seemed that there was no better way than
+            brute force, which would be probitively expensive, given the sheer size of the English
+            Language.
+          </p>
+          <p>
+            More recently, I've become interested through programs like the semi-incredible (at
+            least to me) <a href="https://en.wikipedia.org/wiki/SHRDLU">SHRDLU</a> in Computational
+            Linguistics using deterministic rules and in the ability to learn structured
+            information in systems like Prolog "Databases." Given the already impressive
+            capabilities of pre-AI Google and Wolfram-Alpha, I thought it wouldn't be unreasonable
+            to assume that it is <emph>possible</emph> to write a program that can reasonably learn
+            patterns and correct speech.
+          </p>
+          <p>
+            Overall, I see this project as a small stepping stone to a classical AI that is
+            capable of ascertaining relationships between ideas by reading unstructured data, like
+            a Wikipedia article, for instance. Being able to analyze grammatical structure and to
+            learn equivalences in language was something I saw as a "step 0."
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <h3>Natural Language - Computational Graph Interface</h3>
+        <p>
+          A program meant to take natural language queries and reinterpret them as structured
+          computational graphs that can be analyzed by traditional solvers and database analyses
+          using a neural network.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Modular Neural Network interface</li>
+            <li>Ability to understand context and determine the nature of a query</li>
+            <li>Ability to reinterpret sentences as Prolog-like facts</li>
+            <li>Ability to classify queries to determine which solver to use</li>
+            <li>Ability to use an LLM to interpret computational/logical conclusions</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Studying Statistical Learning</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Inspiration</h4>
+          <p>
+            The idea came to me when I was reading online about Anki's "Vector" bot's abilities to
+            understand human queries by converting them into computational queries. This, combined
+            with Wolfram Alpha's ability to do so as well, made me wonder if this was the approach
+            that might be successful with regards to unifying classical algorithms in logic and
+            decision makings to LLMs.
+          </p>
+          <p>
+            While I don't have enough knowledge about the field yet to know if my assumptions are
+            wildly wrong, my impression is that the LLM would merely serve as a buffer to interpret
+            ambiguous language and recast it as logical symbols, while something like a SAT solver
+            or automated theorem prover would work in the background to make connections and
+            determine answers to questions, or just to update a local knowledge database.
+          </p>
+          <p>
+            While this approach is not as useful for most people who use LLMs for LLM-stuff, I
+            feel like it's an interesting idea that plays to the strengths of Neural Networks
+            (identifying patterns and handling ambiguity) in addition to traditional algorithms
+            (efficiency, provable correctness, interpretability). If nothing else, I'm curious to
+            see why this presumption could turn out to be incorrect.
+          </p>
+        </section>
+      </section>
+    </section>
+
+    <section>
+      <h2>Currently inactive</h2>
+      <p>
+        These are projects that I've worked on in the past and am interested in, but are not top
+        prorities either because they don't have many applicable skills to other projects, there
+        are knowledge barriers that I have to overcome before I can continue work, or I'm just
+        less interested and have not prioritized them for one reason or another.
+      </p>
+    </section>
   </body>
 </html>
