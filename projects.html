@@ -303,6 +303,371 @@
         are knowledge barriers that I have to overcome before I can continue work, or I'm just
         less interested and have not prioritized them for one reason or another.
       </p>
+      <section>
+        <h3>
+          <a href="https://github.com/theyee0/file-management-utils">
+            File Management Utilities
+          </a>
+        </h3>
+        <p>
+          A shell script providing useful utilities for dealing with heavily nested directories,
+          which I wrote when I was trying to back up files from an android phone with a certain
+          filename extension.
+        </p>
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Created man page documentation for functions</li>
+            <li>Allowed for regular-expression based opterations</li>
+            <li>Created destructive and non-destructive operation types</li>
+            <li>Allowed for handling of stdin</li>
+            <li>Specify target destinations like with standard unix commands</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Reason for Inactivity</h4>
+          <p>
+            I would like to rewrite the shell script as a C program to improve the performance and
+            deal with the warts in the program. Additionally, I want to make a more intuitive rule
+            system rather than excusively using regular expressions since the original goal was to
+            allow this to be used by others, as well.
+          </p>
+          <p>
+            Since all of the changes I want to make are fairly superficial and don't change the
+            functionality all that much, I decided that editing this project is not a high
+            priority, and until further notice, I've left it as inactive.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3><a href="https://github.com/theyee0/file-manager">File Manager</a></h3>
+        <p>
+          A file management program written in Clojure that was intended to specialize in handling
+          images and automatically sorting them and displaying statistics, for example by plotting
+          geolocation tags on a OSM map and using OpenCV libraries to tag and sort images.
+        </p>
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Implemented basic interface with Java Swing</li>
+            <li>Implemented backends for copying, deleting, moving functions</li>
+            <li>Integrated OpenStreetMap pane</li>
+            <li>Integrated EXIF data parser</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Reason for Inactivity</h4>
+          <p>
+            At the moment, the code is poorly written and requires a significant deal of
+            refactoring and cleaning before new features can be added. Also, file handling is
+            currently performed exclusively with a single thread, leading to noticeable pauses
+            as new directories are loaded into memory.
+          </p>
+          <p>
+            I have no experience writing asynchronous or concurrent code, so I decided that this
+            project should be one that I return to when learning to write multithreaded code
+            becomes a greater priority for me. Also, I feel that I need to learn more about image
+            processing so that I can effectively choose and use OpenCV modules. Thus, until
+            further notice and further discussion with the person who this project was meant for,
+            I'm leaving it as inactive.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3><a href="https://github.com/theyee0/blackjack-curses">Blackjack in Curses</a></h3>
+        <p>
+          A terminal implementation of blackjack with ASCII representations of cards.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Card counting AI for dealer</li>
+            <li>Extended command interface and improved output window</li>
+            <li>Full support for rules of Blackjack, including splitting</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Ncurses interface</li>
+            <li>Basic command interface</li>
+            <li>Extremely rudimentary Dealer AI</li>
+            <li>Basic rules of Blackjack</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Reason for Inactivity</h4>
+          <p>
+            The blackjack curses program was just a small side project meant to help learn to use
+            ncurses. Since it's not a big priority and most of my work will (like the others) be
+            refactoring and cleaning up the codebase, I've decided to leave it as inactive, though
+            there's a greater chance I'll pick it up again since there are quite a few small
+            features I can implement.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3><a href="https://github.com/theyee0/Auburn">Auburn</a></h3>
+        <p>
+          An autumn leaf simulator with a fluid simulator.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Create proper Autumn-themed background</li>
+            <li>Replace circles for leaves with leaf textures</li>
+            <li>Create new algorithm for shimmering leaves</li>
+            <li>Polish mouse interactivity</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Raylib keyboard/mouse interface</li>
+            <li>Basic fluid simulator</li>
+            <li>Basic physics simulator for individual leaves</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Reason for Inactivity</h4>
+          <p>
+            While I think this is an interesting project and I think I could reach a reasonable
+            state of completion, it's not a major priority since, again, it was taken up mostly
+            on a whim for fun rather than with a clear focus in mind.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3><a href="https://github.com/theyee0/dumpster">Dumpster Memory Manager</a></h3>
+        <p>
+          A garbage collection framework meant for programs written in C with aims to support
+          modern algorithms in conservative garbage collectors.
+        </p>
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Implementation of Mark-Sweep Algorithm</li>
+            <li>Incremental garbage collection</li>
+            <li>Conservative heap pointer identification</li>
+            <li>Single header library implementation</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Reason for Inactivity</h4>
+          <p>
+            I tried reading a few papers outlining new garbage collection theoretical frameworks
+            and found that it was a major struggle understanding them since my mathematical skills
+            aren't very well developed. In order to move forward with this project, I think it's
+            important for me to gain a deeper understanding of computing theory and formal
+            mathematics. Hence, I'm leaving it as inactive for now.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3><a href="https://github.com/theyee0/grey-christmas">Grey Christmas</a></h3>
+        <p>
+          A machine learning model aiming to predict the probability of experiencing a snowy
+          Christmas based on the weather in the past year.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Add dataloader support for different dataset formats</li>
+            <li>Create modules for downloading weather data from trusted online repositories</li>
+            <li>Add support for variable sized context windows</li>
+            <li>Add support to add additional December data as Christmas nears</li>
+            <li>Optimize model hyperparameters</li>
+            <li>Implement proper testbench</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Implemented Resnet-based model for classification</li>
+            <li>Implemented Dataloader for Government of Canada daily climate observations</li>
+            <li>Added inference for fixed context window of all days from January to November</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Reason for Inactivity</h4>
+          <p>
+            I think I need a stronger basis in general statistical learning before I can move on
+            to Neural Networks. While working on this project, it was difficult to understand why
+            changing some parameters like batch normalization had such a profound effect on the
+            model's performance. So, until I feel more confident in deep learning, I'll leave this
+            project inactive.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3>
+          <a href="https://github.com/theyee0/arbitrary-precision-mathlib">
+            An Arbitrary Precision Math Library
+          </a>
+        </h3>
+        <p>
+          An arbitrary precision fixed point math library that aims to support computations on
+          different integer bases.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Implement fast multiplication through Strassen-Schonhage Algorithm</li>
+            <li>Implement fast division</li>
+            <li>Implement full base conversion</li>
+            <li>Implement algorithms for computing results of basic transcendental functions</li>
+            <li>Refine API for accessing math functions</li>
+            <li>Create more reliable testbench</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Progress</h4>
+          <ul>
+            <li>Memory management routines implemented</li>
+            <li>Addition and Subtraction Implemented</li>
+            <li>Modular arithmetic of a constant implemented</li>
+            <li>Constant multiplication implemented</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Reason for Inactivity</h4>
+          <p>
+            While this project is certainly interesting, even I have to recognize that it is not
+            strictly useful since there already exist much more efficient libraries like GNU GMP
+            (though admittedly they don't support non-base 10 calculations in general). Regardless,
+            since it's not a big priority, I've left it as inactive for now.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3><a href="https://github.com/theyee0/Halloween-Storybook">Halloween Storybook</a></h3>
+        <p>
+          An unconventional programming language that tries to use vocabulary that might be found
+          in a storybook in order to represent mundane operations. Transpiles to Common Lisp.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Add synonyms for phrases</li>
+            <li>Improve semantics for lists</li>
+            <li>Improve error messages on syntax/compile errors</li>
+            <li>Improve Lexer reliability</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Features</h4>
+          <ul>
+            <li>Transpiles to Common Lisp files</li>
+            <li>Support for variables, lists and control flow</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Reason for Inactivity</h4>
+          <p>
+            At the moment, I don't have much experience with compiler design. I think the lexer
+            and parser both likely need to be rewritten to some extent, and I would like to support
+            multiple targets, particularly C rather than just Common Lisp.
+          </p>
+          <p>
+            Since I don't have much theoretical knowledge at the moment and this project isn't
+            a major priority for me, I've therefore left it inactive.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3><a href="https://github.com/theyee0/Griddle-Me-This">Griddle Me This</a></h3>
+        <p>
+          A convolutional neural network that tries to predict the best move given a position.
+        </p>
+        <section>
+          <h4>Features</h4>
+          <ul>
+            <li>Legal move generation</li>
+            <li>Move probability distribution generator</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Reason for Inactivity</h4>
+          <p>
+            This was my first machine learning project, and again I don't have a very deep
+            theoretical knowledge how to work with deep learning models, so I would like to spend
+            more time learning before I continue trying to improve this model. I've therefore left
+            it inactive.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3><a href="https://github.com/theyee0/foreign-relay">Foreign Relay</a></h3>
+        <p>
+          A simple ncurses game where you play the role of a relay station that is tasked with
+          transmitting the core ideas from corrupted messages.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Improved inter-civilization mechanics</li>
+            <li>Automatically generated backstory</li>
+            <li>Aspects of base-building games</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Features</h4>
+          <ul>
+            <li>Ncurses interface</li>
+            <li>Parameterized message scrambling</li>
+            <li>Visual Similarity based corruption</li>
+            <li>Basic set of civilization properties</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Reason for Inactivity</h4>
+          <p>
+            This was another small side project I took on for the fun so that I could work more on
+            using ncurses. While I do eventually plan to build it into a more fully-fledged game
+            (including adding gameplay mechanics that aren't just reading letters), for the moment
+            it's not super important that I work on it, so I've left it as inactive.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3><a href="https://github.com/theyee0/Cpace-Chess">Cpace Chess</a></h3>
+        <p>
+          A space chess engine written in ANSI/ISO90 C, specifically conforming to the rules of
+          Raumschach.
+        </p>
+        <section>
+          <h4>Plans</h4>
+          <ul>
+            <li>Improve search pruning and alpha-beta performance</li>
+            <li>Write unit tests to confirm correct move functionality for pieces</li>
+            <li>Implement static exchange evaluation</li>
+            <li>Investigate NNUE and self-play to replace evaluation function</li>
+            <li>Improve UCI-esque interface</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Features</h4>
+          <ul>
+            <li>UCI-inspired command line interface</li>
+            <li>Alpha-beta pruned search</li>
+            <li>Mailbox style board and move generation</li>
+            <li>Basic material-based evaluation function</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Reason for Inactivity</h4>
+          <p>
+            I do plan to continue work on the chess engine, especially as I get deeper into my
+            primary (orthochess) program. At the moment since I have very little intution on how to
+            play Raumschach (and indeed, Raumschach theory seems almost non-existent), I'm finding
+            it difficult to deal with simple things like static evaluation. As a result, I think
+            that it would be important to learn how to use NNUE and self-play to improve evaluation
+            rather than hand-coded rules. Until I become more familiar with those techniques, and
+            with techniques meant for chess engine optimization in general, I'll stay mostly
+            inactive on this project.
+          </p>
+        </section>
+      </section>
     </section>
   </body>
 </html>
