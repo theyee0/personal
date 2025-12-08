@@ -3,6 +3,10 @@
   <head>
 	<title>Jim's Personal Website</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
   </head>
   <body>
 	<nav>
@@ -15,54 +19,71 @@
 	  </ul>
 	</nav>
 
-	<h1>Hi, I'm Jim!</h1>
-    <p>
-      I'm currently a Software Engineering student at the University of Waterloo in Ontario,
-      Canada in my study term. My main areas of study right now are
-      <a href="https://www.statlearning.com/">statistical learning</a>, and
-      <a href="https://www.logicmatters.net/tyl/">logic</a> (where I'm currently focusing on
-      <a href="http://people.whitman.edu/~guichard/260/halmos__naive_set_theory.pdf"> basic set
-        theory</a>).
-    </p>
-    <p>
-      If you have any questions, I'd be happy to chat! Send me a message on LinkedIn (or for the
-      adventurous, you can try finding my email address), and we'll go from there. If you have any
-      technical questions, I'm afraid I'll probably struggle to answer them, but go for it!
-    </p>
+    <header>
+      <h1>Hi, I'm Jim!</h1>
+    </header>
 
-    <section>
-      <h2>What am I supposed to be?</h2>
-      <ol>
-        <li>Aspiring Software Engineer</li>
-        <li>Computing Enthusiast</li>
-        <li>Roguelike Game Player</li>
-        <li>Electronics Tinkerer</li>
-        <li>Middle-Long Distance Runner</li>
-        <li>Aspiring Amateur Logician</li>
-        <li><s>Evil Mastermind</s></li>
-      </ol>
-    </section>
+    <article>
+      <section>
+        <div class="sectitle">
+          <h2>About me</h2>
+        </div>
+        <p>
+          I'm currently a Software Engineering student at the University of Waterloo in Ontario,
+          Canada in my study term. My main areas of extracurricular study right now are
+          <a href="https://www.statlearning.com/">statistical learning</a>, and
+          <a href="https://www.logicmatters.net/tyl/">logic</a> (where I'm currently focusing on
+          <a href="http://people.whitman.edu/~guichard/260/halmos__naive_set_theory.pdf"> basic set
+            theory</a>).
+        </p>
+        <p>
+          If you have any questions, I'd be happy to chat! Send me a message on LinkedIn (or for the
+          adventurous, you can try finding my email address), and we'll go from there. If you have any
+          technical questions, I'm afraid I'll probably struggle to answer them, but go for it!
+        </p>
+      </section>
 
-    <section>
-      <h2>Interesting Technologies...</h2>
-      <ol>
-        <li><a href="https://common-lisp.net/"><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Lisp_logo.svg" alt="Common Lisp" /></a></li>
-        <li><a href="https://clojure.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg" alt="Clojure" /></a></li>
-        <li><a href="https://react.dev/"><img src="https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg" alt="React JS" /></a></li>
-        <li><a href="https://www.c-language.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg" alt="C" /></a></li>
-        <li><a href="https://isocpp.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" /></a></li>
-        <li><a href="https://www.python.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" /></a></li>
-        <li><a href="https://www.java.com/en/"><img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" /></a></li>
-      </ol>
-      <p>Check out <a href="projects.html">my personal projects</a> to see how I've tried exploring each!</p>
-    </section>
+      <section>
+        <div class="sectitle">
+          <h2>What am I supposed to be?</h2>
+        </div>
+        <ol>
+          <li>Aspiring Software Engineer</li>
+          <li>Computing Enthusiast</li>
+          <li>Roguelike Game Player</li>
+          <li>Electronics Tinkerer</li>
+          <li>Middle-Long Distance Runner</li>
+          <li>Aspiring Amateur Logician</li>
+          <li><s>Evil Mastermind</s></li>
+        </ol>
+      </section>
 
-    <section>
+      <section>
+        <div class="sectitle">
+          <h2>Interesting Technologies...</h2>
+        </div>
+        <div class="seccontent">
+          <ul class="icon-group">
+            <li><a href="https://common-lisp.net/"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/4/48/Lisp_logo.svg" alt="Common Lisp" /></a></li>
+            <li><a href="https://clojure.org/"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg" alt="Clojure" /></a></li>
+            <li><a href="https://react.dev/"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg" alt="React JS" /></a></li>
+            <li><a href="https://www.c-language.org/"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg" alt="C" /></a></li>
+            <li><a href="https://isocpp.org/"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" /></a></li>
+            <li><a href="https://www.python.org/"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" /></a></li>
+            <li><a href="https://www.java.com/en/"><img class="icon" src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" /></a></li>
+          </ul>
+          <p>Check out <a href="projects.html">my personal projects</a> to see how I've tried exploring each!</p>
+        </div>
+      </section>
+    </article>
+
+    <footer>
       <h2>Get in touch!</h2>
-      <ol>
-        <li><a href="https://github.com/theyee0/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" alt="Github" /></a></li>
-        <li><a href="https://leetcode.com/u/jimc1827/"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/LeetCode_logo_white_no_text.svg" alt="Leetcode" /></a></li>
-        <li><a href="https://linkedin.com/in/jimc1827/"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" /></a></li>
-      </ol>
+      <ul class="icon-group">
+        <li><a href="https://github.com/theyee0/"><img class="white boxed icon" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" alt="Github" /></a></li>
+        <li><a href="https://leetcode.com/u/jimc1827/"><img class="black boxed icon" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/LeetCode_logo_white_no_text.svg" alt="Leetcode" /></a></li>
+        <li><a href="https://linkedin.com/in/jimc1827/"><img class="white boxed icon" src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" /></a></li>
+      </ul>
+    </footer>
   </body>
 </html>
