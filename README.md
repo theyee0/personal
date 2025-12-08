@@ -4,7 +4,7 @@ This is a personal website that I hacked up in a few hours, as of December 7th. 
 
 # Demo
 
-You can open the webpage at (https://theyee0.github.io/personal/)[https://theyee0.github.io/personal/]. Though it will hopefully still be readable on mobile, the only device I've tested the webpage on is a computer, so make sure to use a device with a larger screen for the best results!
+You can open the webpage at [https://theyee0.github.io/personal/](https://theyee0.github.io/personal/). Though it will hopefully still be readable on mobile, the only device I've tested the webpage on is a computer, so make sure to use a device with a larger screen for the best results!
 
 # Styling
 
